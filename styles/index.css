@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+    font-size: 18px;
+    font-family: montserratregular, Arial, Helvetica, Geneva, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    background-color: #1B1B1B;
+    color: #FFF;
+}
+
+section {
+    overflow-x: hidden;
+}
+
+.div-line {
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #e88f00;
+    margin: left;
+}
+
+.fonts3 {
+    font-family: montserratregular, Arial, Helvetica, Geneva, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+}
+
+
+/*Navigation*/
+
+.navbar-nav {
+    text-align: center;
+    color: #ffffff;
+    height: 55px;
+}
+
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+    height: 100%;
+}
+
+.navbar-nav .small {
+    transition: 0.1s ease;
+    font-size: 20px;
+    height: 51px;
+    line-height: 25px;
+}
+
+.navbar-nav .small:hover,
+.navbar-nav .active {
+    border-bottom: 4px solid #e88f00;
+}
+
+.navbar-nav .small:hover {
+    cursor: pointer;
+}
+
+
+/*home-section*/
+
+.hero {
+    height: 100vh;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
+
+.main-font {
+    font-size: 80px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+}
+
+
+/*Face-Section*/
+
+#about {
+    background-color: #282828;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.about-info {
+    text-align: left;
+    padding: 50px 0;
+}
+
+.about p {
+    width: 100%;
+    font-size: 18px;
+}
+
+.head-img {
+    max-width: 300px;
+    margin: auto;
+    position: absolute;
+    top: -100px;
+    right: 0px;
+}
+
+.head-img img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+
+/*SKILLS-Section*/
+
+.WID {
+    height: 80vh;
+}
+
+.WID-image {
+    width: 100%;
+    height: 80vh;
+    filter: brightness(50%);
+    position: absolute;
+}
+
+.WID-content {
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+}
+
+.WhatIDo {
+    padding: 40px;
+    padding-left: 115px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.WhatIDo h2 {
+    font-size: 40px;
+}
+
+.icon {
+    margin-top: 0%;
+    float: left;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 12px;
+}
+
+.boxes {
+    margin: auto;
+    padding: 0px;
+    width: 90%;
+    height: 65%;
+}
+
+.box1 {
+    display: block;
+    float: left;
+    max-height: 50%;
+    width: 50%;
+    height: 50%;
+    padding: 2%;
+}
+
+#b1 {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#b2 {
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#b3 {
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#b4 {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.box1 h3 {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+}
+
+.box1 p {
+    font-size: 15px;
+    position: relative;
+}
+
+
+/*hobbies-section*/
+
+.hobbies-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(filter: alpha(opacity=100);
+    0,
+    1);
+    transform: scale(0, 1);
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.img-hover {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    max-width: 100%;
+    height: auto;
+}
+
+.hovereffect:hover .img-hover {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+}
+
+.hover-text {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    background-color: transparent;
+    color: #FFF;
+    padding: 18px 0;
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.watch {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
+.hovereffect .watch,
+.hovereffect p {
+    color: #FFF;
+    opacity: 0;
+}
+
+.hovereffect:hover .watch,
+.hovereffect:hover p,
+.hovereffect:hover .hover-text {
+    opacity: 1;
+}
+
+
+/*Timeline-sections*/
+
+.job-info {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.timeline-section {
+    background: url('https://s3.us-east-1.amazonaws.com/maxonsites/images/maxon/_800x418_crop_center-center_82_none/hexagonal-background.jpg?mtime=1615843099') no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.timeline-info {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.timeline {
+    position: relative;
+    padding: 2em 0;
+}
+
+.timeline-block {
+    position: relative;
+    margin: 1em 0;
+}
+
+.timeline-block:last-child {
+    margin-bottom: 0
+}
+
+.experience-box .timeline .timeline-block:nth-child(odd) .timeline-content {
+    float: left
+}
+
+.experience-box .timeline .timeline-block:nth-child(odd) .timeline-content .date {
+    left: auto;
+    text-align: right;
+    right: -33%
+}
+
+.experience-box .timeline .timeline-block:nth-child(even) .date {
+    text-align: right;
+    left: auto;
+    right: 60%
+}
+
+.timeline-img {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 15px;
+    left: 50%;
+    border-radius: 50%;
+    margin-left: -28px;
+    background-color: #212121;
+}
+
+.timeline-img .icon {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    line-height: 55px;
+}
+
+.timeline-content:hover .timeline-img {
+    background-color: #00DDED;
+}
+
+.timeline-content {
+    float: right;
+    position: relative;
+    background-color: #1b1b1b;
+    padding: 28px;
+    width: 40%;
+    opacity: .85;
+}
+
+.position {
+    text-transform: capitalize;
+    margin-top: 3px;
+}
+
+.company {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #00DDED;
+}
+
+.date {
+    display: inline-block;
+    color: #f2f2f2;
+    position: absolute;
+    left: 60%;
+    top: 30px
+}
+
+.down-arrow {
+    display: block;
+    margin: 0 auto;
+    border-color: transparent;
+    border-top-color: #00b7c7;
+    border-style: solid;
+    border-width: 15px 7px 0;
+    width: 0;
+    height: 0;
+    position: relative;
+    line-height: 0;
+    right: 1px;
+}
+
+.arrow {
+    display: block;
+    position: absolute;
+    right: 50%;
+    width: 3px;
+    height: 99.8%;
+    background-color: #00b7c7;
+}
+
+.experience-box {
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/*Resume-Section*/
+
+.resume-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.button {
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: .3s all;
+    border: 2px #00b7c7 solid;
+    color: #00b7c7;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #00b7c7;
+}
+
+
+/*footer-section*/
+
+.section-footer {
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/002/393/570/small/black-modern-material-header-with-diagonal-silver-lines-banner-for-your-business-abstract-widescreen-background-vector.jpg) no-repeat;
+    background-size: cover;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: 155px;
+    margin: 0;
+    align-items: center;
+}
+
+.social-item {
+    height: 75px;
+    width: 75px;
+    list-style-type: none;
+}
+
+.social-item i.fa {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.social-item i.fa:hover {
+    font-size: 70px;
+}
+
+.link-color,
+.link-color:hover,
+.link-color:visited {
+    color: #fff;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+
+.date {
+    font-weight: bold;
+}
